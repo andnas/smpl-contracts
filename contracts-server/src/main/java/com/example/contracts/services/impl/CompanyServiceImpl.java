@@ -74,7 +74,7 @@ public class CompanyServiceImpl implements CompanyService {
 	    List<Company> companies = entityManager.createNamedQuery("Company.findAll").getResultList();
 	    return companies;
 	} else {
-	    Query query = entityManager.createQuery("select c from Company c where c.orgForm.id = :orgFormId");
+	    Query query = entityManager.createQuery("select c from Company c where c.dictOrgForm.id = :orgFormId");
 	    query.setParameter("orgFormId", orgFormId);
 	    @SuppressWarnings("unchecked")
 	    List<Company> companies = query.getResultList();
