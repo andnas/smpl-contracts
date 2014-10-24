@@ -11,7 +11,7 @@ import java.util.List;
  */
 @Entity
 @Table(name="companies")
-@NamedQuery(name="Company.findAll", query="SELECT c FROM Company c")
+@NamedQuery(name="Company.findAll", query="SELECT c FROM Company c join fetch c.dictOrgForm")
 public class Company implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private int id;
