@@ -57,8 +57,7 @@ public class Company implements Serializable {
 
 
 	//bi-directional many-to-one association to DictOrgForm
-	//@ManyToOne(fetch=FetchType.LAZY)
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="ORGFORM_ID")
 	public DictOrgForm getDictOrgForm() {
 		return this.dictOrgForm;
