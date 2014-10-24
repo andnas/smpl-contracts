@@ -1,0 +1,17 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.example.contracts</groupId>
+  <artifactId>contracts-distr</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  	<contracts.version>0.0.1-SNAPSHOT</contracts.version>
+  </properties>
+  <packaging>pom</packaging>
+  <modules>
+  	<module>../contracts-model</module>
+  	<module>../contracts-server</module>
+  	<module>../contracts-ui-vaadin6</module>
+  	<module>../contracts-utils</module>
+  </modules>
+</project>
